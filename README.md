@@ -57,5 +57,3 @@ This project is licensed under the **MIT License** – you are free to use and m
 ⚡ **Made with ❤️ and core web technologies.**
 
 ---
-
-Do you want me to make it more **professional GitHub-style with badges (like stars, forks, license, etc.)** or keep it **simple and minimal**?
