@@ -1,0 +1,53 @@
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="app-container">
+        <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+        
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">My Notes</h1>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search notes..." id="searchInput">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            <div class="notes-container" id="notesContainer">
+                <!-- Notes will be populated here -->
+            </div>
+        </div>
+
+        <!-- Main Editor -->
+        <div class="main-editor">
+            <div class="editor-header">
+                <input type="text" class="note-title-input" placeholder="Note title..." id="noteTitleInput">
+                <div class="editor-actions">
+                    <button class="action-btn btn-primary" onclick="createNewNote()">
+                        <span>➕</span> New
+                    </button>
+                    <button class="action-btn btn-secondary" onclick="saveNote()">
+                        <span>💾</span> Save
+                    </button>
+                    <button class="action-btn btn-danger" onclick="deleteNote()">
+                        <span>🗑️</span> Delete
+                    </button>
+                </div>
+            </div>
+            <div class="editor-content">
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">📝</div>
+                    <h3>Select a note to start editing</h3>
+                    <p>Choose a note from the sidebar or create a new one</p>
+                </div>
+                <textarea class="note-content" id="noteContent" placeholder="Start typing your note..." style="display: none;"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    </body>
+</html>
